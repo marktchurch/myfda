@@ -88,7 +88,7 @@ easily be added to the prototype (Play 8).  Some of the notable technology aspec
 
 * The frontend UI was implemented as a single page Ember.js application
 * The backend was implemented using Java and Spring
-* MyFDA offers its own Level 5 REST API to the frontend components
+* MyFDA offers its own Level 3 REST API to the frontend components
 * A style guide was created and evolved throughout the project
 * Changes to the master branch in GitHub trigger a build and deploy using Jenkins
 * The application is packaged as a runnable Docker image for ease of deployment and portability

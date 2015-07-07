@@ -77,7 +77,7 @@ Now create a symbolic link you can use to upgrade Maven.
 sudo ln -s apache-maven-3.3.3/ apache-maven
 ```
 
-Now you need to add Maven to your path.  Do this by creating the /etc/profile.d/maven.sh
+Now you need to add Maven to your path.  Do this by creating the file /etc/profile.d/maven.sh with the following contents:
 
 ```
 export PATH=/opt/apache-maven/bin:$PATH

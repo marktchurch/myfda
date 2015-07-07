@@ -69,6 +69,7 @@ accomplish this:
 | Property Name | Default Value | Description |
 | :------------ | :------------ | :---------- |
 | spring.profiles.active	hsqld	Be sure to set this to mysql to activate MySQL.
+| spring.datasource.platform | hsqldb | Be sure to set this to mysql to activate MySQL schema setup.
 | mysql.username | None | The username of the MySQL user configured to run MyFDA.
 | mysql.password | None | The password of the MySQL user configured to run MyFDA.
 | mysql.jdbc.url | None | The JDBC URL of the MySQL user configured run MyFDA.

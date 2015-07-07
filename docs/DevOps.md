@@ -35,8 +35,6 @@ repository this process was repeated until all changes were successfully integra
 GitHub repository.  This process was repeated  at least once for each sprint until prototype design and 
 development was complete.
 
-![Continuous integration diagram](DevOps/CI_Architecture.png)  
-*Image Caption:  The continuous integration architecture.*
  
 Continuous Delivery
 -------------------
@@ -67,11 +65,7 @@ This script uses the [Dockerfile](https://github.com/NIC-Federal/myfda/blob/mast
 The final job instructs a deployment environment to load the newly created images in the form of the 
 [docker-deploy.sh](https://github.com/NIC-Federal/myfda/blob/master/docker-deploy.sh) script.  At this stage in the process you must provide configuration artifacts that 
 should not be shared publicly such as API keys, database passwords and security certificates.  In 
-production these artifacts are stored in a separate repository with strict access controls.  However, we 
-have provided a sample configuration that contains all the files needed to complete this step with 
-placeholders for the information that must be provided and self signed certificates and private keys not 
-suitable for production use.  For more information on using the sample to create a final production 
-configuration see the Configuration Guide.
+production these artifacts are stored in a separate repository with strict access controls.  
 
 | Step # | Job Configuration | Sample Job Log |
 | :----- | :---------------- | :------------- |
@@ -103,6 +97,9 @@ GitHub project other than secure configuration aspects like the security certifi
 are stored in a private code repository. Therefore, all configuration is controlled by the source control 
 system. Just like code, all configuration changes are inspected and peer reviewed before any configuration 
 changes are accepted into the project.
+
+![Continuous integration diagram](DevOps/CI_Architecture.png)  
+*Image Caption:  The continuous integration architecture.*
 
 Additionally, to assist with configuration management, configuration has been documented within the 
 project documentation to improve understanding by those managing the operation of the application. Also, 
